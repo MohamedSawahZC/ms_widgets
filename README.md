@@ -14,6 +14,7 @@
   - defaultExpansionTile
   - defaultOnBoarding
   - defaultToast
+  - defaultRating
 
 
 ## Getting started
@@ -23,7 +24,7 @@
 ```bash
 dependencies:
   ...
-  ms_widgets: ^0.0.1
+  ms_widgets: ^0.0.2
 ```
 
 ## Usage
@@ -138,6 +139,20 @@ defaultImageButtonWithText2(
               ),
             )
 ```
+-defaultRating
 
+```dart
+ defaultRate(
+        color: Colors.orange, //Start color
+        iconSize: 80,  //Start size
+        initialValue: 3.5,
+        readOnly: false,
+        onChange: (rating){     //rating is the rating value
+        print(index);
+        },
+        allowClear: true,
+        allowHalf: true,   //To handle that you can use half start (as a double rating not int)
+)
+```
 
 
